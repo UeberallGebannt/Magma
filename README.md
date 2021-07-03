@@ -14,7 +14,9 @@ Magma is the next generation of hybrid minecraft server softwares.
 
 Magma is based on Forge and Paper, meaning it can run both Craftbukkit/Spigot/Paper plugins and Forge mods.
 
-We hope to eliminate all issues with craftbukkit forge servers. In the end, we envision a seamless, low lag Magma experience with support for newer 1.12+ versions of Minecraft.
+We hope to eliminate all issues with CraftBukkit Forge servers. In the end, we envision a seamless, low lag Magma experience with support for newer 1.12+ versions of Minecraft.
+
+You can find our bStats statistics [here](https://bstats.org/plugin/bukkit/Magma/5445).
 
 ## BungeeCord
 
@@ -22,16 +24,18 @@ If you want to use Magma in a BungeeCord network, we recommend to use [HexaCord]
 
 In order to use Magma with BungeeCord, you have to enable `forge-support` in the BungeeCord config, set `online-mode` to false in server.properties and `bungeecord` to true in spigot.yml.
 
-## 1.16
+## 1.16+ and other versions
 
-Magma 1.16.x is in development, but a usable release is not available yet. You can still view the source code [here](https://github.com/magmafoundation/Magma-1.16.x).
+Magma 1.16.5 is in development and **alpha** releases are available [here](https://github.com/magmafoundation/Magma-1.16.x). These are for testing only and are not meant to be used on a productive server.
+There is no information on 1.17 support at this time.
+
+Since we will only concentrate on the most popular modding versions, outdated Forge versions like 1.11 or below and versions between 1.13 and 1.15 are and will not be supported.
 
 ## Deployment
 
 ### Installation
 
 1. Download the recommended builds from the [**Releases** section](https://github.com/magmafoundation/Magma/releases) (**Do not** use the "-installer" version as it is broken right now)
-   1. Download Beta builds from the [**CI**](https://ci.hexeption.dev/job/Magma%20Foundation/job/Magma/job/master/)
 2. Make a new directory(folder) for the server
 3. Move the jar that you downloaded into the new directory
 4. Run the jar with your command prompt or terminal, going to your directory and entering `java -jar Magma-[version]-server.jar`. Change [version] to your Magma version number.
@@ -45,7 +49,7 @@ Magma 1.16.x is in development, but a usable release is not available yet. You c
     - `git submodule update --init --recursive`
 - Building
   - First you want to run the build command
-    - `./gradlew launch4j`
+    - `./gradlew outputJar`
   - Now go and get a drink this may take some time
   - Navigate to `build/distributions` directory of the compiled source code
   - Copy the Jar to a new server directory (see Installation) or run `./gradlew launchServer`
@@ -77,14 +81,10 @@ You are welcome to visit Magma's Discord server [here](https://discord.gg/6rkqng
 
 You could also go to Magma's subreddit [here](https://www.reddit.com/r/Magma).
 
-## Unstable/Test builds
-
-For unstable/test builds you can check the [__CI__](https://ci.hexeption.dev/job/Magma%20Foundation/)
-
 ## Partners
 <a href="https://aternos.org/en/"><img src="https://company.aternos.org/img/logotype-blue.svg" width="200"></a>
-<a href="https://serverjars.com/"><img src="https://serverjars.com/assets/img/logo_white.svg" width="200"></a>
 <a href="https://craftycontrol.com/"><img src="https://i.imgur.com/243oDOX.png" width="100" height="100"></a>
+
 
 ### YourKit
 ![YourKit-Logo](https://www.yourkit.com/images/yklogo.png)
