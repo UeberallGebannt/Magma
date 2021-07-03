@@ -78,7 +78,7 @@ Only edit the code in the Projects/Magma Folder and the main SRC folder.
 
 ### Building
 
-- First make sure you ran the genMagmaPatchs before running the `Magma/Tasks/launch4j/launch4j`
+- First make sure you ran the `genPatches` Task before running the `outputJar` Task
 - Your build should be in the `build/distributions`
 
 ### Running Tests
